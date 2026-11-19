@@ -1,0 +1,1417 @@
+{
+  "name": "Delhi Metro + city buses",
+  "lines": [
+    {
+      "id": "yellow",
+      "name": "Yellow Line",
+      "color": "#F5C43C",
+      "mode": "metro",
+      "stations": [
+        "azadpur",
+        "model-town",
+        "gtb-nagar",
+        "vishwavidyalaya",
+        "civil-lines",
+        "kashmere-gate",
+        "chandni-chowk",
+        "new-delhi",
+        "rajiv-chowk",
+        "central-secretariat",
+        "ina",
+        "aiims",
+        "green-park",
+        "hauz-khas"
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Blue Line",
+      "color": "#3B8BE0",
+      "mode": "metro",
+      "stations": [
+        "janakpuri-west",
+        "tilak-nagar",
+        "tagore-garden",
+        "rajouri-garden",
+        "moti-nagar",
+        "kirti-nagar",
+        "patel-nagar",
+        "karol-bagh",
+        "jhandewalan",
+        "ramakrishna-ashram-marg",
+        "rajiv-chowk",
+        "barakhamba-road",
+        "mandi-house",
+        "supreme-court",
+        "indraprastha",
+        "yamuna-bank",
+        "akshardham",
+        "mayur-vihar-1",
+        "noida-sector-18",
+        "botanical-garden",
+        "noida-city-centre"
+      ]
+    },
+    {
+      "id": "red",
+      "name": "Red Line",
+      "color": "#E2564B",
+      "mode": "metro",
+      "stations": [
+        "rithala",
+        "pitampura",
+        "netaji-subhash-place",
+        "keshav-puram",
+        "inderlok",
+        "shastri-nagar",
+        "tis-hazari",
+        "kashmere-gate",
+        "shastri-park",
+        "seelampur",
+        "welcome",
+        "shahdara",
+        "dilshad-garden"
+      ]
+    },
+    {
+      "id": "violet",
+      "name": "Violet Line",
+      "color": "#9B6BE0",
+      "mode": "metro",
+      "stations": [
+        "kashmere-gate",
+        "lal-qila",
+        "jama-masjid",
+        "delhi-gate",
+        "ito",
+        "mandi-house",
+        "khan-market",
+        "lajpat-nagar",
+        "moolchand",
+        "nehru-place",
+        "kalkaji-mandir",
+        "govindpuri",
+        "badarpur-border"
+      ]
+    },
+    {
+      "id": "bus-522",
+      "name": "Bus 522",
+      "color": "#3DDC97",
+      "mode": "bus",
+      "stations": [
+        "janakpuri-west",
+        "ashok-vihar",
+        "pitampura"
+      ]
+    },
+    {
+      "id": "bus-433",
+      "name": "Bus 433",
+      "color": "#FF9F45",
+      "mode": "bus",
+      "stations": [
+        "hauz-khas",
+        "greater-kailash",
+        "nehru-place"
+      ]
+    },
+    {
+      "id": "bus-405",
+      "name": "Bus 405",
+      "color": "#FF6FA5",
+      "mode": "bus",
+      "stations": [
+        "karol-bagh",
+        "new-delhi",
+        "ito",
+        "lajpat-nagar"
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "id": "azadpur",
+      "name": "Azadpur",
+      "x": 470,
+      "y": 90,
+      "lines": [
+        "yellow"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "model-town",
+      "name": "Model Town",
+      "x": 470,
+      "y": 140,
+      "lines": [
+        "yellow"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "gtb-nagar",
+      "name": "GTB Nagar",
+      "x": 470,
+      "y": 190,
+      "lines": [
+        "yellow"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "vishwavidyalaya",
+      "name": "Vishwavidyalaya",
+      "x": 470,
+      "y": 240,
+      "lines": [
+        "yellow"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "civil-lines",
+      "name": "Civil Lines",
+      "x": 470,
+      "y": 290,
+      "lines": [
+        "yellow"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "kashmere-gate",
+      "name": "Kashmere Gate",
+      "x": 470,
+      "y": 340,
+      "lines": [
+        "yellow",
+        "red",
+        "violet"
+      ],
+      "label": {
+        "dx": -17,
+        "dy": 17,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "chandni-chowk",
+      "name": "Chandni Chowk",
+      "x": 470,
+      "y": 390,
+      "lines": [
+        "yellow"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "new-delhi",
+      "name": "New Delhi",
+      "x": 470,
+      "y": 440,
+      "lines": [
+        "yellow",
+        "bus-405"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": -14,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "rajiv-chowk",
+      "name": "Rajiv Chowk",
+      "x": 470,
+      "y": 520,
+      "lines": [
+        "yellow",
+        "blue"
+      ],
+      "label": {
+        "dx": 17,
+        "dy": -13,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "central-secretariat",
+      "name": "Central Secretariat",
+      "x": 470,
+      "y": 590,
+      "lines": [
+        "yellow"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "ina",
+      "name": "INA",
+      "x": 470,
+      "y": 650,
+      "lines": [
+        "yellow"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "aiims",
+      "name": "AIIMS",
+      "x": 470,
+      "y": 710,
+      "lines": [
+        "yellow"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "green-park",
+      "name": "Green Park",
+      "x": 470,
+      "y": 770,
+      "lines": [
+        "yellow"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "hauz-khas",
+      "name": "Hauz Khas",
+      "x": 470,
+      "y": 830,
+      "lines": [
+        "yellow",
+        "bus-433"
+      ],
+      "label": {
+        "dx": -13,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "janakpuri-west",
+      "name": "Janakpuri West",
+      "x": 70,
+      "y": 520,
+      "lines": [
+        "blue",
+        "bus-522"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "tilak-nagar",
+      "name": "Tilak Nagar",
+      "x": 110,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "tagore-garden",
+      "name": "Tagore Garden",
+      "x": 150,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "rajouri-garden",
+      "name": "Rajouri Garden",
+      "x": 190,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "moti-nagar",
+      "name": "Moti Nagar",
+      "x": 230,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "kirti-nagar",
+      "name": "Kirti Nagar",
+      "x": 270,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "patel-nagar",
+      "name": "Patel Nagar",
+      "x": 310,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "karol-bagh",
+      "name": "Karol Bagh",
+      "x": 350,
+      "y": 520,
+      "lines": [
+        "blue",
+        "bus-405"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "jhandewalan",
+      "name": "Jhandewalan",
+      "x": 390,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "ramakrishna-ashram-marg",
+      "name": "Ramakrishna Ashram Marg",
+      "x": 430,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 8,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": 45
+      }
+    },
+    {
+      "id": "barakhamba-road",
+      "name": "Barakhamba Road",
+      "x": 510,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "mandi-house",
+      "name": "Mandi House",
+      "x": 550,
+      "y": 520,
+      "lines": [
+        "blue",
+        "violet"
+      ],
+      "label": {
+        "dx": 15,
+        "dy": 14,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "supreme-court",
+      "name": "Supreme Court",
+      "x": 590,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "indraprastha",
+      "name": "Indraprastha",
+      "x": 630,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "yamuna-bank",
+      "name": "Yamuna Bank",
+      "x": 670,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "akshardham",
+      "name": "Akshardham",
+      "x": 710,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "mayur-vihar-1",
+      "name": "Mayur Vihar-I",
+      "x": 750,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "noida-sector-18",
+      "name": "Noida Sector 18",
+      "x": 790,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "botanical-garden",
+      "name": "Botanical Garden",
+      "x": 830,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "noida-city-centre",
+      "name": "Noida City Centre",
+      "x": 870,
+      "y": 520,
+      "lines": [
+        "blue"
+      ],
+      "label": {
+        "dx": 7,
+        "dy": 15,
+        "anchor": "start",
+        "rotate": -42
+      }
+    },
+    {
+      "id": "rithala",
+      "name": "Rithala",
+      "x": 90,
+      "y": 60,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 8,
+        "dy": -8,
+        "anchor": "start",
+        "rotate": 45
+      }
+    },
+    {
+      "id": "pitampura",
+      "name": "Pitampura",
+      "x": 150,
+      "y": 120,
+      "lines": [
+        "red",
+        "bus-522"
+      ],
+      "label": {
+        "dx": -14,
+        "dy": 4,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "netaji-subhash-place",
+      "name": "Netaji Subhash Place",
+      "x": 210,
+      "y": 180,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 8,
+        "dy": -8,
+        "anchor": "start",
+        "rotate": 45
+      }
+    },
+    {
+      "id": "keshav-puram",
+      "name": "Keshav Puram",
+      "x": 270,
+      "y": 235,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 8,
+        "dy": -8,
+        "anchor": "start",
+        "rotate": 45
+      }
+    },
+    {
+      "id": "inderlok",
+      "name": "Inderlok",
+      "x": 330,
+      "y": 285,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 8,
+        "dy": -8,
+        "anchor": "start",
+        "rotate": 45
+      }
+    },
+    {
+      "id": "shastri-nagar",
+      "name": "Shastri Nagar",
+      "x": 380,
+      "y": 310,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 8,
+        "dy": -8,
+        "anchor": "start",
+        "rotate": 45
+      }
+    },
+    {
+      "id": "tis-hazari",
+      "name": "Tis Hazari",
+      "x": 425,
+      "y": 325,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 8,
+        "dy": -8,
+        "anchor": "start",
+        "rotate": 45
+      }
+    },
+    {
+      "id": "shastri-park",
+      "name": "Shastri Park",
+      "x": 540,
+      "y": 345,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 0,
+        "dy": -30,
+        "anchor": "middle",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "seelampur",
+      "name": "Seelampur",
+      "x": 610,
+      "y": 345,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 0,
+        "dy": -14,
+        "anchor": "middle",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "welcome",
+      "name": "Welcome",
+      "x": 670,
+      "y": 335,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 0,
+        "dy": -30,
+        "anchor": "middle",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "shahdara",
+      "name": "Shahdara",
+      "x": 740,
+      "y": 325,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 0,
+        "dy": -14,
+        "anchor": "middle",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "dilshad-garden",
+      "name": "Dilshad Garden",
+      "x": 810,
+      "y": 315,
+      "lines": [
+        "red"
+      ],
+      "label": {
+        "dx": 0,
+        "dy": -30,
+        "anchor": "middle",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "lal-qila",
+      "name": "Lal Qila",
+      "x": 500,
+      "y": 375,
+      "lines": [
+        "violet"
+      ],
+      "label": {
+        "dx": 13,
+        "dy": 5,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "jama-masjid",
+      "name": "Jama Masjid",
+      "x": 520,
+      "y": 405,
+      "lines": [
+        "violet"
+      ],
+      "label": {
+        "dx": 13,
+        "dy": 5,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "delhi-gate",
+      "name": "Delhi Gate",
+      "x": 540,
+      "y": 435,
+      "lines": [
+        "violet"
+      ],
+      "label": {
+        "dx": 13,
+        "dy": 5,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "ito",
+      "name": "ITO",
+      "x": 550,
+      "y": 470,
+      "lines": [
+        "violet",
+        "bus-405"
+      ],
+      "label": {
+        "dx": 13,
+        "dy": 2,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "khan-market",
+      "name": "Khan Market",
+      "x": 600,
+      "y": 570,
+      "lines": [
+        "violet"
+      ],
+      "label": {
+        "dx": 13,
+        "dy": 5,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "lajpat-nagar",
+      "name": "Lajpat Nagar",
+      "x": 645,
+      "y": 615,
+      "lines": [
+        "violet",
+        "bus-405"
+      ],
+      "label": {
+        "dx": 13,
+        "dy": 5,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "moolchand",
+      "name": "Moolchand",
+      "x": 690,
+      "y": 660,
+      "lines": [
+        "violet"
+      ],
+      "label": {
+        "dx": 13,
+        "dy": 5,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "nehru-place",
+      "name": "Nehru Place",
+      "x": 735,
+      "y": 700,
+      "lines": [
+        "violet",
+        "bus-433"
+      ],
+      "label": {
+        "dx": 13,
+        "dy": 5,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "kalkaji-mandir",
+      "name": "Kalkaji Mandir",
+      "x": 780,
+      "y": 740,
+      "lines": [
+        "violet"
+      ],
+      "label": {
+        "dx": 13,
+        "dy": 5,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "govindpuri",
+      "name": "Govindpuri",
+      "x": 825,
+      "y": 780,
+      "lines": [
+        "violet"
+      ],
+      "label": {
+        "dx": 13,
+        "dy": 5,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "badarpur-border",
+      "name": "Badarpur Border",
+      "x": 880,
+      "y": 845,
+      "lines": [
+        "violet"
+      ],
+      "label": {
+        "dx": -14,
+        "dy": 10,
+        "anchor": "end",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "ashok-vihar",
+      "name": "Ashok Vihar",
+      "x": 110,
+      "y": 320,
+      "lines": [
+        "bus-522"
+      ],
+      "label": {
+        "dx": 14,
+        "dy": 4,
+        "anchor": "start",
+        "rotate": 0
+      }
+    },
+    {
+      "id": "greater-kailash",
+      "name": "Greater Kailash",
+      "x": 570,
+      "y": 790,
+      "lines": [
+        "bus-433"
+      ],
+      "label": {
+        "dx": 0,
+        "dy": 20,
+        "anchor": "middle",
+        "rotate": 0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "a": "azadpur",
+      "b": "model-town",
+      "line": "yellow",
+      "minutes": 3
+    },
+    {
+      "a": "model-town",
+      "b": "gtb-nagar",
+      "line": "yellow",
+      "minutes": 2
+    },
+    {
+      "a": "gtb-nagar",
+      "b": "vishwavidyalaya",
+      "line": "yellow",
+      "minutes": 2
+    },
+    {
+      "a": "vishwavidyalaya",
+      "b": "civil-lines",
+      "line": "yellow",
+      "minutes": 3
+    },
+    {
+      "a": "civil-lines",
+      "b": "kashmere-gate",
+      "line": "yellow",
+      "minutes": 2
+    },
+    {
+      "a": "kashmere-gate",
+      "b": "chandni-chowk",
+      "line": "yellow",
+      "minutes": 2
+    },
+    {
+      "a": "chandni-chowk",
+      "b": "new-delhi",
+      "line": "yellow",
+      "minutes": 3
+    },
+    {
+      "a": "new-delhi",
+      "b": "rajiv-chowk",
+      "line": "yellow",
+      "minutes": 3
+    },
+    {
+      "a": "rajiv-chowk",
+      "b": "central-secretariat",
+      "line": "yellow",
+      "minutes": 2
+    },
+    {
+      "a": "central-secretariat",
+      "b": "ina",
+      "line": "yellow",
+      "minutes": 3
+    },
+    {
+      "a": "ina",
+      "b": "aiims",
+      "line": "yellow",
+      "minutes": 2
+    },
+    {
+      "a": "aiims",
+      "b": "green-park",
+      "line": "yellow",
+      "minutes": 3
+    },
+    {
+      "a": "green-park",
+      "b": "hauz-khas",
+      "line": "yellow",
+      "minutes": 3
+    },
+    {
+      "a": "janakpuri-west",
+      "b": "tilak-nagar",
+      "line": "blue",
+      "minutes": 3
+    },
+    {
+      "a": "tilak-nagar",
+      "b": "tagore-garden",
+      "line": "blue",
+      "minutes": 2
+    },
+    {
+      "a": "tagore-garden",
+      "b": "rajouri-garden",
+      "line": "blue",
+      "minutes": 2
+    },
+    {
+      "a": "rajouri-garden",
+      "b": "moti-nagar",
+      "line": "blue",
+      "minutes": 2
+    },
+    {
+      "a": "moti-nagar",
+      "b": "kirti-nagar",
+      "line": "blue",
+      "minutes": 3
+    },
+    {
+      "a": "kirti-nagar",
+      "b": "patel-nagar",
+      "line": "blue",
+      "minutes": 2
+    },
+    {
+      "a": "patel-nagar",
+      "b": "karol-bagh",
+      "line": "blue",
+      "minutes": 3
+    },
+    {
+      "a": "karol-bagh",
+      "b": "jhandewalan",
+      "line": "blue",
+      "minutes": 2
+    },
+    {
+      "a": "jhandewalan",
+      "b": "ramakrishna-ashram-marg",
+      "line": "blue",
+      "minutes": 2
+    },
+    {
+      "a": "ramakrishna-ashram-marg",
+      "b": "rajiv-chowk",
+      "line": "blue",
+      "minutes": 3
+    },
+    {
+      "a": "rajiv-chowk",
+      "b": "barakhamba-road",
+      "line": "blue",
+      "minutes": 2
+    },
+    {
+      "a": "barakhamba-road",
+      "b": "mandi-house",
+      "line": "blue",
+      "minutes": 2
+    },
+    {
+      "a": "mandi-house",
+      "b": "supreme-court",
+      "line": "blue",
+      "minutes": 3
+    },
+    {
+      "a": "supreme-court",
+      "b": "indraprastha",
+      "line": "blue",
+      "minutes": 2
+    },
+    {
+      "a": "indraprastha",
+      "b": "yamuna-bank",
+      "line": "blue",
+      "minutes": 3
+    },
+    {
+      "a": "yamuna-bank",
+      "b": "akshardham",
+      "line": "blue",
+      "minutes": 4
+    },
+    {
+      "a": "akshardham",
+      "b": "mayur-vihar-1",
+      "line": "blue",
+      "minutes": 3
+    },
+    {
+      "a": "mayur-vihar-1",
+      "b": "noida-sector-18",
+      "line": "blue",
+      "minutes": 3
+    },
+    {
+      "a": "noida-sector-18",
+      "b": "botanical-garden",
+      "line": "blue",
+      "minutes": 3
+    },
+    {
+      "a": "botanical-garden",
+      "b": "noida-city-centre",
+      "line": "blue",
+      "minutes": 3
+    },
+    {
+      "a": "rithala",
+      "b": "pitampura",
+      "line": "red",
+      "minutes": 3
+    },
+    {
+      "a": "pitampura",
+      "b": "netaji-subhash-place",
+      "line": "red",
+      "minutes": 3
+    },
+    {
+      "a": "netaji-subhash-place",
+      "b": "keshav-puram",
+      "line": "red",
+      "minutes": 3
+    },
+    {
+      "a": "keshav-puram",
+      "b": "inderlok",
+      "line": "red",
+      "minutes": 3
+    },
+    {
+      "a": "inderlok",
+      "b": "shastri-nagar",
+      "line": "red",
+      "minutes": 2
+    },
+    {
+      "a": "shastri-nagar",
+      "b": "tis-hazari",
+      "line": "red",
+      "minutes": 2
+    },
+    {
+      "a": "tis-hazari",
+      "b": "kashmere-gate",
+      "line": "red",
+      "minutes": 3
+    },
+    {
+      "a": "kashmere-gate",
+      "b": "shastri-park",
+      "line": "red",
+      "minutes": 3
+    },
+    {
+      "a": "shastri-park",
+      "b": "seelampur",
+      "line": "red",
+      "minutes": 3
+    },
+    {
+      "a": "seelampur",
+      "b": "welcome",
+      "line": "red",
+      "minutes": 3
+    },
+    {
+      "a": "welcome",
+      "b": "shahdara",
+      "line": "red",
+      "minutes": 3
+    },
+    {
+      "a": "shahdara",
+      "b": "dilshad-garden",
+      "line": "red",
+      "minutes": 3
+    },
+    {
+      "a": "kashmere-gate",
+      "b": "lal-qila",
+      "line": "violet",
+      "minutes": 2
+    },
+    {
+      "a": "lal-qila",
+      "b": "jama-masjid",
+      "line": "violet",
+      "minutes": 2
+    },
+    {
+      "a": "jama-masjid",
+      "b": "delhi-gate",
+      "line": "violet",
+      "minutes": 2
+    },
+    {
+      "a": "delhi-gate",
+      "b": "ito",
+      "line": "violet",
+      "minutes": 2
+    },
+    {
+      "a": "ito",
+      "b": "mandi-house",
+      "line": "violet",
+      "minutes": 2
+    },
+    {
+      "a": "mandi-house",
+      "b": "khan-market",
+      "line": "violet",
+      "minutes": 3
+    },
+    {
+      "a": "khan-market",
+      "b": "lajpat-nagar",
+      "line": "violet",
+      "minutes": 3
+    },
+    {
+      "a": "lajpat-nagar",
+      "b": "moolchand",
+      "line": "violet",
+      "minutes": 3
+    },
+    {
+      "a": "moolchand",
+      "b": "nehru-place",
+      "line": "violet",
+      "minutes": 3
+    },
+    {
+      "a": "nehru-place",
+      "b": "kalkaji-mandir",
+      "line": "violet",
+      "minutes": 3
+    },
+    {
+      "a": "kalkaji-mandir",
+      "b": "govindpuri",
+      "line": "violet",
+      "minutes": 3
+    },
+    {
+      "a": "govindpuri",
+      "b": "badarpur-border",
+      "line": "violet",
+      "minutes": 4
+    },
+    {
+      "a": "janakpuri-west",
+      "b": "ashok-vihar",
+      "line": "bus-522",
+      "minutes": 10
+    },
+    {
+      "a": "ashok-vihar",
+      "b": "pitampura",
+      "line": "bus-522",
+      "minutes": 12
+    },
+    {
+      "a": "hauz-khas",
+      "b": "greater-kailash",
+      "line": "bus-433",
+      "minutes": 7
+    },
+    {
+      "a": "greater-kailash",
+      "b": "nehru-place",
+      "line": "bus-433",
+      "minutes": 8
+    },
+    {
+      "a": "karol-bagh",
+      "b": "new-delhi",
+      "line": "bus-405",
+      "minutes": 8
+    },
+    {
+      "a": "new-delhi",
+      "b": "ito",
+      "line": "bus-405",
+      "minutes": 7
+    },
+    {
+      "a": "ito",
+      "b": "lajpat-nagar",
+      "line": "bus-405",
+      "minutes": 9
+    }
+  ]
+}

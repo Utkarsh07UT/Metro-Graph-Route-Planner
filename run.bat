@@ -1,0 +1,6 @@
+@echo off
+echo Starting MetroGraph Route Planner...
+echo Opening http://localhost:8000 in your browser...
+start http://localhost:8000
+python -m uvicorn app:app --app-dir backend --host 127.0.0.1 --port 8000
+pause
