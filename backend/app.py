@@ -58,17 +58,20 @@ app.add_middleware(
 
 
 @app.get("/api/health")
+@app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok"}
 
 
 @app.get("/api/network", response_model=Network)
+@app.get("/network", response_model=Network)
 def get_network() -> Network:
     """The seed dataset: stations, lines with their station order, weighted edges."""
     return BASE_NETWORK
 
 
 @app.post("/api/solve", response_model=SolveResponse)
+@app.post("/solve", response_model=SolveResponse)
 def solve(request: SolveRequest) -> SolveResponse:
     """Plan a journey and return all three optimisation modes for comparison."""
     graph = MetroGraph(request.network)
@@ -91,6 +94,7 @@ def solve(request: SolveRequest) -> SolveResponse:
 
 
 @app.post("/api/analyze", response_model=Analysis)
+@app.post("/analyze", response_model=Analysis)
 def analyze(request: NetworkRequest) -> Analysis:
     """Structural properties of the current network (connectivity, degrees, ...)."""
     return MetroGraph(request.network).analyse()
