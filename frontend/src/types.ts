@@ -124,6 +124,14 @@ export interface ModeOption {
   hint: string;
 }
 
+export const MODES: Mode[] = ["fewest_stops", "shortest_time", "fewest_interchanges"];
+
+export const MODE_LABELS: Record<Mode, string> = {
+  fewest_stops: "Fewest stops",
+  shortest_time: "Shortest time",
+  fewest_interchanges: "Fewest changes",
+};
+
 export const MODE_OPTIONS: ModeOption[] = [
   {
     id: "fewest_stops",

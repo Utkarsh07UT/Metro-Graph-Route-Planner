@@ -1,4 +1,5 @@
 import type { Analysis, Mode, Network, SolveResponse } from "./types";
+import { ClientMetroGraph, DEFAULT_NETWORK, solveClient } from "./lib/solver";
 
 const API_BASE = "";
 
@@ -8,25 +9,24 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
     ...init,
   });
 
-  if (!response.ok) {
-    let detail = `Request failed (${response.status})`;
-    try {
-      const body = (await response.json()) as { detail?: unknown };
-      if (typeof body.detail === "string") detail = body.detail;
-    } catch {
-      /* keep the status-based message */
-    }
-    throw new Error(detail);
+  const contentType = response.headers.get("content-type") || "";
+  if (!response.ok || !contentType.includes("application/json")) {
+    throw new Error(`Endpoint ${path} unavailable (${response.status})`);
   }
 
   return (await response.json()) as T;
 }
 
-export function getNetwork(signal?: AbortSignal): Promise<Network> {
-  return request<Network>("/api/network", { signal });
+export async function getNetwork(signal?: AbortSignal): Promise<Network> {
+  try {
+    return await request<Network>("/api/network", { signal });
+  } catch (err) {
+    console.warn("Backend /api/network unavailable; using embedded network dataset:", err);
+    return DEFAULT_NETWORK;
+  }
 }
 
-export function solve(
+export async function solve(
   payload: {
     network: Network;
     source: string;
@@ -36,17 +36,33 @@ export function solve(
   },
   signal?: AbortSignal,
 ): Promise<SolveResponse> {
-  return request<SolveResponse>("/api/solve", {
-    method: "POST",
-    body: JSON.stringify(payload),
-    signal,
-  });
+  try {
+    return await request<SolveResponse>("/api/solve", {
+      method: "POST",
+      body: JSON.stringify(payload),
+      signal,
+    });
+  } catch (err) {
+    console.warn("Backend /api/solve unavailable; solving locally with graph engine:", err);
+    return solveClient(
+      payload.network,
+      payload.source,
+      payload.target,
+      payload.mode,
+      payload.interchangePenalty,
+    );
+  }
 }
 
-export function analyze(network: Network, signal?: AbortSignal): Promise<Analysis> {
-  return request<Analysis>("/api/analyze", {
-    method: "POST",
-    body: JSON.stringify({ network }),
-    signal,
-  });
+export async function analyze(network: Network, signal?: AbortSignal): Promise<Analysis> {
+  try {
+    return await request<Analysis>("/api/analyze", {
+      method: "POST",
+      body: JSON.stringify({ network }),
+      signal,
+    });
+  } catch (err) {
+    console.warn("Backend /api/analyze unavailable; computing graph analysis locally:", err);
+    return new ClientMetroGraph(network).analyse();
+  }
 }
