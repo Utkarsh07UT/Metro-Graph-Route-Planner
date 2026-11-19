@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
-    "dev": "cd frontend && npm run dev"
+    "build": "node -e \"const fs = require('fs'), cp = require('child_process'); if (fs.existsSync('frontend')) { process.chdir('frontend'); cp.execSync('npm install', {stdio: 'inherit'}); } cp.execSync('npm run build', {stdio: 'inherit'});\""
   }
 }
